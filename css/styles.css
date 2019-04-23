@@ -30,11 +30,26 @@ nav li:last-child {
   margin-right: 0;
 }
 
+.learn ul li {
+  margin-top: .8rem;
+  color: navy;
+}
+
+.learn p {
+  background: navy;
+  color: #fff;
+  padding: 3rem 4rem;
+  position: absolute;
+  top: 5.5rem;
+  width: 550px;
+  right: 0;
+}
+
 /* INTRO
 ---------------------------------- */
 .intro {
   background: #ccc;
-  padding: 12rem 1rem;
+  padding: 15rem 1rem;
 }
 
 .intro h1 {
