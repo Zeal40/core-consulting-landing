@@ -35,7 +35,10 @@ nav li:last-child {
   color: navy;
 }
 
+.learn ul li:hover { cursor: pointer; }
+
 .learn p {
+  display: none;
   background: navy;
   color: #fff;
   padding: 3rem 4rem;
@@ -44,6 +47,8 @@ nav li:last-child {
   width: 550px;
   right: 0;
 }
+
+.learn p.active { display: block; }
 
 /* INTRO
 ---------------------------------- */
@@ -99,26 +104,30 @@ nav li:last-child {
 ---------------------------------- */
 .faq {
   background: #d6cd5d;
-  padding: 3rem;
+  padding: 2rem;
   margin-bottom: 1rem;
-  color: #00462e;
+  color: #2D3A42;
 }
 
 .question {
   font-weight: bold;
 }
 
-.faq .row .col-1 p {
+.faq .q,
+.faq .a { text-align: center; }
+
+.faq .q p,
+.faq .a p {
   background: #fff;
   text-align: center;
   display: inline-block;
   padding: .5rem 1rem;
   border-radius: 50%;
-  color: #00462e;
+  color: #2D3A42;
   font-size: 1.35rem;
 }
 
-.faq .row:last-child .col-1 p {
+.faq .a p {
   color: #d6cd5d
 }
 
@@ -137,11 +146,65 @@ nav li:last-child {
 ---------------------------------- */
 
 footer {
-  background: #2f3a41;
+  background: #2D3A42;
   color: #fff;
   padding: 3rem 1rem;
+  text-align: center;
 }
 
 footer small {
   font-size: .75rem;
+}
+
+.social { text-align: center }
+
+.social li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social li:last-child { margin-right: 0; }
+
+.social li:first-child a { padding: 1rem 1.5rem; }
+
+.social li a {
+  color: #fff;
+  font-size: 1.5rem;
+  background: #495A60;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 484px) {
+  .faq { padding: 3rem; }
+}
+
+@media screen and (min-width: 767px) {
+  .social { text-align: right }
+
+  .social li {
+    margin-right: .5rem;
+  }
+
+  .social li:first-child a { padding: .5rem .8rem; }
+
+  .social li a {
+    font-size: 1rem;
+    padding: .5rem .65rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social li {
+    margin-right: 1rem;
+  }
+
+  .social li:first-child a { padding: 1rem 1.5rem; }
+
+  .social li a {
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+  }
+
+  footer .info { text-align: left; }
 }
