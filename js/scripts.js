@@ -27,10 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
   var info = document.querySelector('.learn p')
   var plus = document.querySelector('.plus')
   var minus = document.querySelector('.minus')
+  var btn = document.querySelector('.mobile-toggle')
+  var nav = document.querySelector('nav')
 
   el.onclick = function() {
     info.classList.toggle('active');
     plus.classList.toggle('d-none');
     minus.classList.toggle('d-none');
+  }
+
+  btn.onclick = function() {
+    nav.classList.toggle('active')
+    btn.classList.toggle('active')
   }
 });

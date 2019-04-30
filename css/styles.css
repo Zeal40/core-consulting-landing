@@ -26,7 +26,7 @@ a:hover {
 /* HEADER
 ---------------------------------- */
 header {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1.5rem 1rem;
   border-bottom: 1px solid #ccc;
   background: #fff;
   z-index: 9999;
@@ -55,9 +55,18 @@ nav {
   display: none;
 }
 
+.mobile-toggle:active,
+.mobile-toggle:focus { outline: none; }
+
+.mobile-toggle:hover { cursor: pointer; }
+
+.mobile-toggle.active { color: #fff; }
+
+nav.active { display: block; }
+
 nav ul {
   text-align: right;
-  padding: 1rem 7px;
+  padding: 1rem 15px 1rem 7px;
   margin-top: 3.5rem;
 }
 
@@ -96,7 +105,7 @@ nav li a {
   color: #fff;
   padding: 3rem 4rem;
   position: absolute;
-  top: 5.4rem;
+  top: 4.9rem;
   width: 100%;
   right: 0;
 }
@@ -275,8 +284,20 @@ footer small {
   border-radius: 50%;
 } */
 
-@media screen and (min-width: 484px) {
+@media screen and (min-width: 576px) {
   .faq { padding: 3rem; }
+
+  .header { position: relative; }
+
+  nav {
+    background: none;
+  }
+
+  nav ul {
+    text-align: left;
+    padding: 0;
+    margin-top: 0;
+  }
 
   nav li {
     margin-right: 1rem;
@@ -300,20 +321,7 @@ footer small {
   }
 }
 
-@media screen and (min-width: 767px) {
-  /* .social { text-align: right }
-
-  .social li {
-    margin-right: .5rem;
-  }
-
-  .social li:first-child a { padding: .5rem .8rem; }
-
-  .social li a {
-    font-size: 1rem;
-    padding: .5rem .65rem;
-  } */
-
+@media screen and (min-width: 768px) {
   .social {
     text-align: right;
   }
