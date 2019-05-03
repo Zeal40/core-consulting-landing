@@ -24,13 +24,20 @@ window.onscroll = function(e) {
 
 document.addEventListener("DOMContentLoaded", function() {
   var el = document.querySelector('.learn ul li')
-  var info = document.querySelector('.learn p')
+  var learn = document.querySelector('.js-learn')
+  var info = document.querySelector('.js-learn-text')
   var plus = document.querySelector('.plus')
   var minus = document.querySelector('.minus')
   var btn = document.querySelector('.mobile-toggle')
   var nav = document.querySelector('nav')
 
   el.onclick = function() {
+    info.classList.toggle('active');
+    plus.classList.toggle('d-none');
+    minus.classList.toggle('d-none');
+  }
+
+  learn.onclick = function() {
     info.classList.toggle('active');
     plus.classList.toggle('d-none');
     minus.classList.toggle('d-none');
