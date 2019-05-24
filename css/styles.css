@@ -23,6 +23,22 @@ a:hover {
   text-decoration: none;
 }
 
+.well {
+  background: #e8eaea;
+  padding: 5rem;
+}
+
+.btn-register {
+  background: #00ABC5;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.btn-register:hover {
+  color:#fff;
+}
+
 /* HEADER
 ---------------------------------- */
 header {
